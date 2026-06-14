@@ -50,7 +50,7 @@ public class LoginController {
 
     private void abrirDashboard() {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/com/example/demo/admin-view.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/tareas11fx/admin-view.fxml"));
             Stage stage = (Stage) txtUsuario.getScene().getWindow();
             stage.setScene(new Scene(root, 1100, 650));
             stage.setTitle("MiTienda - Panel Administrador");

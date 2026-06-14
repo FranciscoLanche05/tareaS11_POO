@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<StackPane stylesheets="@styles/login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.LoginController">
+<StackPane stylesheets="@styles/login.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tareas11fx.controllers.LoginController">
     <VBox alignment="CENTER" maxWidth="380" spacing="12" styleClass="login-card">
         <padding>
             <Insets bottom="35" left="35" right="35" top="35" />

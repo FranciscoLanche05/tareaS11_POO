@@ -24,12 +24,12 @@ public class AdminController {
 
     @FXML
     private void mostrarInicio() {
-        cargarVista("/com/example/demo/inicio-view.fxml", "Inicio", "Inicio");
+        cargarVista("/com/example/tareas11fx/inicio-view.fxml", "Inicio", "Inicio");
     }
 
     @FXML
     private void mostrarProductos() {
-        cargarVista("/com/example/demo/productos-view.fxml", "Productos", "Inicio / Productos");
+        cargarVista("/com/example/tareas11fx/productos-view.fxml", "Productos", "Inicio / Productos");
     }
 
     @FXML
@@ -60,7 +60,7 @@ public class AdminController {
     @FXML
     private void cerrarSesion() {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/com/example/demo/login.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/example/tareas11fx/login.fxml"));
             Stage stage = (Stage) contentArea.getScene().getWindow();
             stage.setScene(new Scene(root, 900, 600));
             stage.setTitle("MiTienda - Iniciar Sesión");

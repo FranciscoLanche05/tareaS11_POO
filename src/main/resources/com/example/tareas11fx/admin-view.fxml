@@ -1,14 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
+<BorderPane stylesheets="@styles/admin.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tareas11fx.controllers.AdminController">
 
-</AnchorPane>
+    <left>
+        <VBox prefWidth="220" styleClass="sidebar">
+            <padding>
+                <Insets bottom="15" left="15" right="15" top="15" />
+            </padding>
+
+            <HBox alignment="CENTER_LEFT" spacing="10" styleClass="sidebar-logo">
+                <Label styleClass="logo-icon" text="🛒" />
+                <VBox>
+                    <Label styleClass="logo-title" text="MiTienda" />
+                    <Label styleClass="logo-subtitle" text="Sistema de Ventas" />
+                </VBox>
+            </HBox>
+
+            <VBox alignment="CENTER_LEFT" spacing="2" styleClass="user-box">
+                <padding>
+                    <Insets bottom="10" left="8" right="8" top="10" />
+                </padding>
+                <Label styleClass="user-name" text="🟢 admin" />
+                <Label styleClass="user-status" text="En línea" />
+                <Label styleClass="user-role" text="Administrador" />
+            </VBox>
+
+            <Label styleClass="menu-section" text="MENÚ PRINCIPAL" />
+
+            <Button maxWidth="1.7976931348623157E308" onAction="#mostrarInicio" styleClass="menu-button" text="🏠  Inicio" />
+            <Button maxWidth="1.7976931348623157E308" onAction="#mostrarProductos" styleClass="menu-button" text="📦  Productos" />
+            <Button maxWidth="1.7976931348623157E308" onAction="#mostrarCategorias" styleClass="menu-button" text="🏷  Categorías" />
+            <Button maxWidth="1.7976931348623157E308" onAction="#mostrarClientes" styleClass="menu-button" text="👥  Clientes" />
+            <Button maxWidth="1.7976931348623157E308" onAction="#mostrarVentas" styleClass="menu-button" text="🛒  Ventas" />
+            <Button maxWidth="1.7976931348623157E308" onAction="#mostrarReportes" styleClass="menu-button" text="📊  Reportes" />
+            <Button maxWidth="1.7976931348623157E308" onAction="#mostrarUsuarios" styleClass="menu-button" text="👤  Usuarios" />
+
+            <Region VBox.vgrow="ALWAYS" />
+
+            <Button maxWidth="1.7976931348623157E308" onAction="#cerrarSesion" styleClass="logout-button" text="⏻  Cerrar sesión" />
+        </VBox>
+    </left>
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="topbar">
+            <padding>
+                <Insets bottom="15" left="25" right="25" top="15" />
+            </padding>
+            <Label fx:id="lblTituloModulo" styleClass="topbar-title" text="Productos" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label styleClass="topbar-user" text="👤 admin" />
+            <Label styleClass="topbar-role" text="Administrador" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox styleClass="content-wrapper">
+            <padding>
+                <Insets bottom="20" left="25" right="25" top="0" />
+            </padding>
+            <Label fx:id="lblBreadcrumb" styleClass="breadcrumb" text="Inicio / Productos" />
+            <StackPane fx:id="contentArea" VBox.vgrow="ALWAYS" />
+        </VBox>
+    </center>
+
+</BorderPane>
