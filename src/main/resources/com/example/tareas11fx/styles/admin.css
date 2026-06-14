@@ -1,0 +1,229 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f4f6fb;
+}
+
+/* Sidebar */
+.sidebar {
+    -fx-background-color: #1e2a4a;
+    -fx-spacing: 4;
+}
+
+.sidebar-logo {
+    -fx-padding: 0 0 15 0;
+}
+
+.logo-icon {
+    -fx-font-size: 22px;
+    -fx-background-color: #4f7cf6;
+    -fx-background-radius: 8;
+    -fx-padding: 6 10 6 10;
+    -fx-text-fill: white;
+}
+
+.logo-title {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.logo-subtitle {
+    -fx-text-fill: #9aa5c3;
+    -fx-font-size: 10px;
+}
+
+.user-box {
+    -fx-background-color: #2a3a63;
+    -fx-background-radius: 8;
+}
+
+.user-name {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.user-status {
+    -fx-text-fill: #6cf593;
+    -fx-font-size: 10px;
+}
+
+.user-role {
+    -fx-text-fill: #4f7cf6;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.menu-section {
+    -fx-text-fill: #6c7a9c;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-padding: 15 0 5 5;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c5cde0;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 12 10 12;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: #2a3a63;
+    -fx-text-fill: white;
+}
+
+.logout-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ff6b6b;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 12 10 12;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.logout-button:hover {
+    -fx-background-color: #3a2a3a;
+}
+
+/* Topbar */
+.topbar {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #e6e9f0 transparent;
+    -fx-border-width: 1;
+}
+
+.topbar-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e6b;
+}
+
+.topbar-user {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e6b;
+}
+
+.topbar-role {
+    -fx-text-fill: #4f7cf6;
+    -fx-font-size: 11px;
+    -fx-background-color: #eaf0ff;
+    -fx-background-radius: 4;
+    -fx-padding: 2 8 2 8;
+}
+
+/* Content */
+.content-wrapper {
+    -fx-background-color: #f4f6fb;
+}
+
+.breadcrumb {
+    -fx-text-fill: #8a93ad;
+    -fx-font-size: 11px;
+    -fx-padding: 10 0 10 0;
+}
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 10, 0, 0, 2);
+}
+
+.card-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e6b;
+}
+
+.field-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #6c7a9c;
+    -fx-font-weight: bold;
+}
+
+.text-field, .combo-box {
+    -fx-background-color: #f8f9fc;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #e0e4ee;
+    -fx-padding: 6;
+}
+
+/* CRUD buttons */
+.btn-nuevo, .btn-guardar, .btn-actualizar, .btn-eliminar-form, .btn-limpiar {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+
+.btn-nuevo { -fx-background-color: #4f7cf6; }
+.btn-guardar { -fx-background-color: #2ecc71; }
+.btn-actualizar { -fx-background-color: #f1c40f; }
+.btn-eliminar-form { -fx-background-color: #e74c3c; }
+.btn-limpiar { -fx-background-color: #95a5a6; }
+
+.btn-nuevo:hover { -fx-background-color: #3d63d6; }
+.btn-guardar:hover { -fx-background-color: #27ae60; }
+.btn-actualizar:hover { -fx-background-color: #d4ac0d; }
+.btn-eliminar-form:hover { -fx-background-color: #c0392b; }
+.btn-limpiar:hover { -fx-background-color: #7f8c8d; }
+
+/* Table */
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #f8f9fc;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #6c7a9c;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+
+.placeholder-label {
+    -fx-text-fill: #888;
+    -fx-font-size: 14px;
+    -fx-padding: 50;
+}
+
+/* Badges de estado */
+.badge-activo {
+    -fx-background-color: #d4f7e2;
+    -fx-text-fill: #2ecc71;
+    -fx-background-radius: 4;
+    -fx-padding: 2 10 2 10;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.badge-inactivo {
+    -fx-background-color: #fde2e1;
+    -fx-text-fill: #e74c3c;
+    -fx-background-radius: 4;
+    -fx-padding: 2 10 2 10;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+/* Botones de acciones en tabla */
+.btn-editar, .btn-eliminar {
+    -fx-background-color: #4f7cf6;
+    -fx-text-fill: white;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+    -fx-font-size: 10px;
+    -fx-padding: 4 8 4 8;
+}
+
+.btn-eliminar {
+    -fx-background-color: #e74c3c;
+}

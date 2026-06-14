@@ -1,0 +1,75 @@
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+.root, StackPane {
+    -fx-background-color: linear-gradient(to bottom right, #4f7cf6, #6c5ce7);
+}
+
+.login-card {
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.4);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 25, 0.2, 0, 10);
+}
+
+.logo-icon {
+    -fx-font-size: 32px;
+}
+
+.app-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e6b;
+}
+
+.app-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #8a8fa3;
+}
+
+.form-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e6b;
+    -fx-padding: 10 0 0 0;
+}
+
+.field-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #555;
+    -fx-font-weight: bold;
+}
+
+.text-field, .password-field, .combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #d8dce6;
+    -fx-padding: 8;
+}
+
+.error-label {
+    -fx-text-fill: #e74c3c;
+    -fx-font-size: 12px;
+}
+
+.btn-ingresar {
+    -fx-background-color: #4f7cf6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-cursor: hand;
+}
+
+.btn-ingresar:hover {
+    -fx-background-color: #3d63d6;
+}
+
+.hint-label {
+    -fx-font-size: 10px;
+    -fx-text-fill: #aaa;
+}
